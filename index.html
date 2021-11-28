@@ -17,7 +17,8 @@
       <p class="body__add-elem">
         <label class="body__label-new-task" for="new-task">Add Item</label>
         <div class="body__task-row">
-          <input class="body__input-task" id="new-task" type="text"><button>Add</button>
+          <input class="body__input-task new-task" id="new-task" type="text">
+          <button class="body__button">Add</button>
         </div>
       </p>
       <h3 class="body__h3">Todo</h3>
@@ -30,7 +31,7 @@
               <img class="body__button-img" src="./remove.svg">
             </button>
         </li>
-        <li class="body__li body__li__edit"><input type="checkbox">
+        <li class="body__li body__li__edit"><input class="body__input" type="checkbox">
             <label class="body__label-task">Go Shopping</label>
             <input class="body__input-task" type="text" value="Go Shopping">
             <button class="body__button body__button__edit">Save</button>
@@ -40,7 +41,7 @@
         </li>
       </ul>
       <h3 class="body__h3">Completed</h3>
-      <ul id="body__ul-compl">
+      <ul class="body__ul-compl">
         <li class="body__li"><input class="body__input" type="checkbox" checked>
             <label class="body__label-task">See the Doctor</label>
             <input class="body__input-task" type="text">
