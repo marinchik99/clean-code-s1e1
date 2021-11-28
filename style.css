@@ -1,0 +1,171 @@
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+} 
+
+.body__link {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.body__link-img {
+  width: 100%;
+}
+
+.body__more-inf{
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+  .body__link  { 
+    text-align: center;
+  }
+}
+
+.body__main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.body__label-task,
+.body__input-task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.body__task-row {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+li,
+h3 {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.body__button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.body__button:hover {
+  color: #3a3A3a;
+}
+
+/* Heading */
+.body__h3,
+.body__label-new-task {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.body__input-task {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.body__input-task:focus {
+  color: #333;
+}
+
+/* New Task */
+.body__label-new-task {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.body__input-task.new-task {
+  width: 318px;
+}
+
+/* Task list */
+.body__li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body__li {
+  vertical-align: middle;
+}
+
+.body__input {
+  margin: 0 10px;
+}
+
+.body__label-task {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.body__input-task {
+  width: 226px;
+}
+
+.body__button-img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.body__button-img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.body__ul-compl .body__label-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.body__li .body__input-task {
+  display: none;
+}
+
+.body__li.body__li__edit .body__input-task {
+  display: inline-block;
+  width: 224px;
+}
+
+.body__li.body__li__edit .body__label-task {
+  display: none;
+}
