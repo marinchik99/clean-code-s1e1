@@ -18,11 +18,9 @@
 }
 
 @media (max-width:768px) {
-
   .body__link  { 
     text-align: center;
   }
-  
 }
 .body__main {
   display: block;
